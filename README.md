@@ -10,7 +10,7 @@ For a refresher on the kmeans algorithm you can check out [this overview](https:
 
 For a refresher on the silhouette scoring algorithm you can check out [this overview](https://tushar-joshi-89.medium.com/silhouette-score-a9f7d8d78f29) which gives a broad overview of the intuition behind the algorithm (though it uses the sklearn implementation while you will need to build your own from scratch) or [the wiki](https://en.wikipedia.org/wiki/Silhouette_(clustering))
 
-This project is meant to be open ended - and instead of giving you a particular bioinformatic use case and problem - we will keep this assignment abstract and operate on matrices of arbitrary sizes (i.e. some random number of observations and some random number of features). 
+Unlike previous assignments where we give a particular bioinformatics use case and problem - we will keep this assignment abstract and operate on matrices of arbitrary sizes (i.e. some random number of observations and some random number of features). The reasoning behind this is that it is sometimes best to consider the scope of your inputs and outputs to an algorithm and not bring in any domain specific logic or naming to the implementation.  
 
 Instead of providing you with a fixed input to the KMeans algorithm I've provided some code to generate a clustered 2D matrix with known labels. Use this as your input and validate your results visually with the plotting functions I've provided. 
 
@@ -18,7 +18,7 @@ Consider the scope of the inputs and how the different parameters of the input d
   * should your model still run if the provided k=0?
   * should your model still run if the number of observations < the provided k?
   * can your model handle very high k? 
-  * can your model handle very high dimensionality? 
+  * can your model handle very high dimensionality? what about only a single dimension? 
 
 ## API
 This implementation __must__ support a fixed and predefined API. Please consider what methods of your implementation should be public and private and denote them using the appropriate underscored style 
