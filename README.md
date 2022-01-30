@@ -63,30 +63,21 @@ scores = silhouette.score(labels)
 
 ## Tasks
 [] Complete the KMeans class with your implementation of the algorithm
-
-  [] complete the `fit` method
-  
-  [] complete the `predict` method
-  
-  [] complete the `get_error` method
-  
-  [] complete the `get_centroid` method
+  * complete the `fit` method
+  * complete the `predict` method
+  * complete the `get_error` method
+  * complete the `get_centroid` method
 
 [] Complete the Silhouette class with your implementation of the algorithm
-  
-  [] complete the `score` method
+  * complete the `score` method
 
 [] Unit Testing
-  
-  [] KMeans Class
-  
-  [] Silhouette Class
+  * KMeans Class
+  * Silhouette Class
 
 [] Packaging
-  
-  [] pip installable module
-  
-  [] github actions (install + pytest)
+  * pip installable module
+  * github actions (install + pytest)
 
 # Getting Started
 To get started you will need to fork this repo onto your own github account. Work on your codebase from your own repo and commit changes. I have listed the minimum (and maximum) python module requirements in `requirements.txt` 
@@ -131,3 +122,18 @@ plot_clusters(t_clusters, t_labels)
 # with your silhouette score implementation
 plot_multipanel(t_clusters, t_labels, pred_labels, scores)
 ```
+
+## Example Visualizations
+Here are some examples of visualizations for some tightly and loosely clustered data. 
+
+I've also included an example output for the multipanel visualization
+
+### Tightly Clustered Data
+![tightly-clustered-data](figures/tight_clusters.png)
+
+### Loosely Clustered Data
+![loosely-clustered-data](figures/loose_clusters.png)
+
+### Multipanel Visualization
+![multipanel-data](figures/example_multipanel.png)
+
