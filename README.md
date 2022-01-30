@@ -62,20 +62,20 @@ scores = silhouette.score(labels)
 ```
 
 ## Tasks
-[] Complete the KMeans class with your implementation of the algorithm
+[ TODO ] Complete the KMeans class with your implementation of the algorithm
   * complete the `fit` method
   * complete the `predict` method
   * complete the `get_error` method
   * complete the `get_centroid` method
 
-[] Complete the Silhouette class with your implementation of the algorithm
+[ TODO ] Complete the Silhouette class with your implementation of the algorithm
   * complete the `score` method
 
-[] Unit Testing
+[ TODO ] Unit Testing
   * KMeans Class
   * Silhouette Class
 
-[] Packaging
+[ TODO ] Packaging
   * pip installable module
   * github actions (install + pytest)
 
