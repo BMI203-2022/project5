@@ -6,9 +6,9 @@ Implementation of KMeans and Silhouette Scoring
 ## Overview
 The goal of this assignment is to implement the k-means clustering algorithm and the silhouette scoring algorithm. 
 
-For a refresher on the kmeans algorithm you can check out (this overview)[https://towardsmachinelearning.org/k-means/] or the (wiki)[https://towardsmachinelearning.org/k-means/]. 
+For a refresher on the kmeans algorithm you can check out [this overview](https://towardsmachinelearning.org/k-means/) or the [wiki](https://towardsmachinelearning.org/k-means/). 
 
-For a refresher on the silhouette scoring algorithm you can check out (this overview)[https://tushar-joshi-89.medium.com/silhouette-score-a9f7d8d78f29] which gives a broad overview of the intuition behind the algorithm (though it uses the sklearn implementation while you will need to build your own from scratch) or (the wiki)[https://en.wikipedia.org/wiki/Silhouette_(clustering)]
+For a refresher on the silhouette scoring algorithm you can check out [this overview](https://tushar-joshi-89.medium.com/silhouette-score-a9f7d8d78f29) which gives a broad overview of the intuition behind the algorithm (though it uses the sklearn implementation while you will need to build your own from scratch) or [the wiki](https://en.wikipedia.org/wiki/Silhouette_(clustering))
 
 This project is meant to be open ended - and instead of giving you a particular bioinformatic use case and problem - we will keep this assignment abstract and operate on matrices of arbitrary sizes (i.e. some random number of observations and some random number of features). 
 
@@ -21,11 +21,29 @@ Consider the scope of the inputs and how the different parameters of the input d
   * can your model handle very high dimensionality? 
 
 ## API
-This implementation __must__ support a fixed and predefined API. Please consider what methods of your implementation should be public and private and denote them using the appropriate underscored style (`public_method` == public; `_private_method` == private)
+This implementation __must__ support a fixed and predefined API. Please consider what methods of your implementation should be public and private and denote them using the appropriate underscored style 
 
-Your KMeans algorithm will be implemented using a scikit-learn style API (i.e. init/fit/predict) which will require 3 steps to run. The intuition behind splitting up the fit/predict methods is that you may want to cluster novel data using the centroids calculated from some initial training set.
+```python3
+class SomeClass:
+  
+  def public_method(self):
+    """
+    """
 
-Your Silhouette algorithm will be implemented using a scikit-learn style metric API (i.e. init/score) which will require 2 steps to run. The intuition behind splitting this up will not be immediately apparent for this silhouette scoring implementation but in the real world there are usually multiple scoring methods you are calculating which would be subclassed from some shared Metric class. Building up your models with this in mind will allow for easy integration of subclasses with superclasses down the line if you ever end up implementing them. 
+  def _private_method(self):
+    """
+    """
+```
+
+Your KMeans algorithm will be implemented using a scikit-learn style API (i.e. init/fit/predict) which will require 3 steps to run. 
+
+The intuition behind splitting up the fit/predict methods is that you may want to cluster novel data using the centroids calculated from some initial training set.
+
+Your Silhouette algorithm will be implemented using a scikit-learn style metric API (i.e. init/score) which will require 2 steps to run. 
+
+The intuition behind splitting this up will not be immediately apparent for this silhouette scoring implementation but in the real world there are usually multiple scoring methods you are calculating which would be subclassed from some shared Metric class. 
+
+Building up your models with this in mind will allow for easy integration of subclasses with superclasses down the line if you ever end up implementing them. 
 
 While these methods are the only ones we are _requiring_ I highly recommend you create more private methods for specific subtasks within your implementation. 
 
@@ -45,20 +63,29 @@ scores = silhouette.score(labels)
 
 ## Tasks
 [] Complete the KMeans class with your implementation of the algorithm
+
   [] complete the `fit` method
+  
   [] complete the `predict` method
+  
   [] complete the `get_error` method
+  
   [] complete the `get_centroid` method
 
 [] Complete the Silhouette class with your implementation of the algorithm
+  
   [] complete the `score` method
 
 [] Unit Testing
+  
   [] KMeans Class
+  
   [] Silhouette Class
 
 [] Packaging
+  
   [] pip installable module
+  
   [] github actions (install + pytest)
 
 # Getting Started
