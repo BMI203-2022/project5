@@ -141,3 +141,9 @@ I've also included an example output for the multipanel visualization
 
 ![multipanel-data](figures/example_multipanel.png)
 
+# Grading (Total: 10)
+* KMeans Implementation (3)
+* Silhouette Implementation (2)
+* Correct API (1)
+* Unit Tests (2)
+* Pip Installable / Actions (2)
