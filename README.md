@@ -135,5 +135,9 @@ I've also included an example output for the multipanel visualization
 ![loosely-clustered-data](figures/loose_clusters.png)
 
 ### Multipanel Visualization
+> Note that the cluster labels themselves may change after clustering 
+> 
+> (i.e. expected cluster 0 is not guaranteed to be named cluster 0 after clustering) 
+
 ![multipanel-data](figures/example_multipanel.png)
 
