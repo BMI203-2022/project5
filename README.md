@@ -4,11 +4,11 @@ Implementation of KMeans and Silhouette Scoring
 # Assignment
 
 ## Overview
-The goal of this assignment is to implement the k-means clustering algorithm and the silhouette scoring algorithm. 
+The goal of this assignment is to implement the k-means clustering algorithm and the silhouette scoring metric. 
 
 For a refresher on the kmeans algorithm you can check out [this overview](https://towardsmachinelearning.org/k-means/) or the [wiki](https://towardsmachinelearning.org/k-means/). 
 
-For a refresher on the silhouette scoring algorithm you can check out [this overview](https://tushar-joshi-89.medium.com/silhouette-score-a9f7d8d78f29) which gives a broad overview of the intuition behind the algorithm (though it uses the sklearn implementation while you will need to build your own from scratch) or [the wiki](https://en.wikipedia.org/wiki/Silhouette_(clustering))
+For a refresher on the silhouette scoring metric you can check out [this overview](https://tushar-joshi-89.medium.com/silhouette-score-a9f7d8d78f29) which gives a broad overview of the intuition behind the function (though it uses the sklearn implementation while you will need to build your own from scratch) or [the wiki](https://en.wikipedia.org/wiki/Silhouette_(clustering))
 
 Unlike previous assignments where we give a particular bioinformatics use case and problem - we will keep this assignment abstract and operate on matrices of arbitrary sizes (i.e. some random number of observations and some random number of features). The reasoning behind this is that it is sometimes best to consider the scope of your inputs and outputs to an algorithm and not bring in any domain specific logic or naming to the implementation.  
 
@@ -39,7 +39,7 @@ Your KMeans algorithm will be implemented using a scikit-learn style API (i.e. i
 
 The intuition behind splitting up the fit/predict methods is that you may want to cluster novel data using the centroids calculated from some initial training set.
 
-Your Silhouette algorithm will be implemented using a scikit-learn style metric API (i.e. init/score) which will require 2 steps to run. 
+Your Silhouette scoring metric will be implemented using a scikit-learn style metric API (i.e. init/score) which will require 2 steps to run. 
 
 The intuition behind splitting this up will not be immediately apparent for this silhouette scoring implementation but in the real world there are usually multiple scoring methods you are calculating which would be subclassed from some shared Metric class. 
 
@@ -68,7 +68,7 @@ scores = silhouette.score(labels)
   * complete the `get_error` method
   * complete the `get_centroid` method
 
-[ TODO ] Complete the Silhouette class with your implementation of the algorithm
+[ TODO ] Complete the Silhouette class with your implementation of the metric
   * complete the `score` method
 
 [ TODO ] Unit Testing
